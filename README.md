@@ -95,3 +95,15 @@ This is the place for you to write reflections:
     > Pada rust, static variables bersifat immutable secara default. Hal ini dilakukan untuk memastikan bahwa static variables tidak dapat diubah secara tidak sengaja. Dibandingkan dengan Java yang menerapkan static variable dengan cara menggunakan static function.
 
 #### Reflection Subscriber-2
+
+1. Have you explored things outside of the steps in the tutorial, for example: src/lib.rs? If not, explain why you did not do so. If yes, explain things that you have learned from those other parts of code.
+
+    > `lib.rs` merupakan file uang digunakan untuk mendefinisikan komponen yang penting dalam sebuah aplikasi Rust seperti configuration handling, error handling, dan inisialisasi REQWEST HTTP.
+
+2. Since you have completed the tutorial by now and have tried to test your notification system by spawning multiple instances of Receiver, explain how Observer pattern eases you to plug in more subscribers. How about spawning more than one instance of Main app, will it still be easy enough to add to the system?
+
+    > Ya, Observer pattern memudahkan dalam melakukan integrasi Subscriber baru ke dalam sistem notifikasi yang ada. Arsitektur yang dibangun dengan menggunakan Observer pattern membverikan fleksibilitas yang baik. Program juga memnuhi prinsip open-closed, sehingga extendable. Dalam kasus instansiasi lebih dari satu Main app akan mudah, karena dilakukan dengan cara menggunakan API yang sesuai.
+
+3. Have you tried to make your own Tests, or enhance documentation on your Postman collection? If you have tried those features, tell us whether it is useful for your work (it can be your tutorial work or your Group Project).
+
+    > Membuat test pada aplikasi Postman memabntu saya untuk melakukan validasi pada program yang kita buat. Postman Collection juga membantu dalam melakukan verifikasi response, karena menggunakan data asli sebagai salah satu komponennya.
